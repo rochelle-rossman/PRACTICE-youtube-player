@@ -116,7 +116,7 @@ const videoPlayer = (videoId) => {
 
 // Filter Button Row
 const filterButtons = () => {
-  let domString = `
+  const domString = `
   <div class="d-flex flex-wrap justify-content-between my-3">
     <button class="btn btn-secondary btn-lg buttonRow" id="music">Music</button>
     <button class="btn btn-secondary btn-lg buttonRow" id="javascript">Javascript</button>
@@ -131,7 +131,7 @@ const filterButtons = () => {
 
 // Cards
 const cardsOnDom = (array) => {
-  let domString = '';
+  const domString = '';
   for (const item of array) {
     domString += `
     <div class="mb-3 d-flex align-items-center" style="background: white; padding: 20px; border: 1px solid black; border-radius: 10px;">
